@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Readme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Profile Readme Generator</h1>
+        <form id="readme-form">
+            <label for="template">Choose a Template:</label>
+            <select id="template">
+                <option value="basic">Basic</option>
+                <option value="projects">Showcase Projects</option>
+                <option value="skills">Highlight Skills</option>
+                <option value="interests">Personal Interests</option>
+            </select>
+
+            <label for="profile-picture">Profile Picture URL:</label>
+            <input type="url" id="profile-picture" placeholder="https://example.com/your-profile-pic.jpg">
+
+            <label for="bio">Bio:</label>
+            <textarea id="bio" rows="4" placeholder="Write a short bio..."></textarea>
+
+            <label for="social-links">Social Media Links (comma-separated):</label>
+            <input type="text" id="social-links" placeholder="https://twitter.com/your-profile, https://linkedin.com/in/your-profile">
+
+            <label for="projects">Project Highlights (comma-separated):</label>
+            <textarea id="projects" rows="4" placeholder="Project 1: Description, Project 2: Description"></textarea>
+
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" placeholder="JavaScript, Python, C++, ...">
+
+            <label for="interests">Personal Interests (comma-separated):</label>
+            <input type="text" id="interests" placeholder="Music, Reading, Traveling, ...">
+
+            <button type="button" id="generate-readme">Generate README</button>
+        </form>
+
+        <div id="preview">
+            <h2>Preview</h2>
+            <pre id="readme-output"></pre>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
